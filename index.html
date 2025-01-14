@@ -84,9 +84,9 @@
         _move: function () {
           const targetY = ball.y + (Math.random() * 50 - 25) * difficulty;
           if (this.y + this.h / 2 < targetY) {
-            this.y += this.speed + ball.speed * 0.05;
+            this.y += this.speed + ball.speed * 0.1;
           } else {
-            this.y -= this.speed + ball.speed * 0.05;
+            this.y -= this.speed + ball.speed * 0.1;
           }
         },
 
