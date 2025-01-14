@@ -19,9 +19,10 @@
         canvasCtx = canvasEl.getContext("2d"),
         gapX = 10,
         mouse = { x: 0, y: 0 };
-      let difficulty = 0.2;
+      let difficulty = 0.1;
 
       const lineWidth = 15;
+      const maxBallSpeed = 12; // Limite de velocidade da bola
 
       // Sons
       const hitSound = new Audio("hit.mp3");
@@ -81,11 +82,11 @@
         speed: 5,
 
         _move: function () {
-          const targetY = ball.y + (Math.random() * 100 - 50) * difficulty;
+          const targetY = ball.y + (Math.random() * 50 - 25) * difficulty;
           if (this.y + this.h / 2 < targetY) {
-            this.y += this.speed + ball.speed * 0.1;
+            this.y += this.speed + ball.speed * 0.05;
           } else {
-            this.y -= this.speed + ball.speed * 0.1;
+            this.y -= this.speed + ball.speed * 0.05;
           }
         },
 
@@ -172,7 +173,7 @@
         },
 
         _pointUp: function () {
-          this.speed += 0.5;
+          this.speed = Math.min(this.speed + 0.5, maxBallSpeed);
           this.x = field.w / 2;
           this.y = field.h / 2;
         },
