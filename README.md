@@ -1,69 +1,90 @@
-Ping Pong Game
+# 🏓 Ping Pong Game
 
-Este é um simples jogo de Ping Pong desenvolvido com HTML5, CSS e JavaScript puro. O jogo roda diretamente no navegador e tem como objetivo proporcionar uma experiência divertida e desafiadora.
+Este é um jogo de Ping Pong moderno desenvolvido com HTML5, CSS3 e JavaScript puro. O jogo foi completamente refatorado para demonstrar boas práticas de desenvolvimento web, incluindo design responsivo, organização de código e experiência de usuário aprimorada.
 
-🎮 Demonstração
+![Ping Pong Game Preview](https://via.placeholder.com/1200x600/0c1219/4ade80?text=Ping+Pong+Game)
 
-Abra o arquivo index.html no navegador para iniciar o jogo.
+## 🎮 Demonstração
 
-🚀 Funcionalidades
+Abra o arquivo `index.html` em um navegador moderno para iniciar o jogo.
 
-Controle do jogador via movimento do mouse
+## 🚀 Funcionalidades
 
-IA do oponente com dificuldade ajustável
+- ✨ Interface de usuário moderna e responsiva
+- 🎯 Controle da raquete via movimento do mouse
+- 🤖 IA avançada do oponente com comportamento adaptativo
+- 🏆 Sistema de pontuação e estatísticas em tempo real
+- 🔊 Efeitos sonoros para colisões, paredes e pontos
+- 📊 Registro de estatísticas de jogo (rebatidas, precisão, etc.)
+- 🎛️ Três níveis de dificuldade (Fácil, Médio, Difícil)
+- ⏸️ Sistema de pausa/retomada do jogo
+- 📱 Design responsivo para diversos tamanhos de tela
 
-Sistema de pontuação
+## 🛠️ Tecnologias Utilizadas
 
-Efeitos sonoros para colisões, paredes e pontos
+- **HTML5** - Canvas para renderização do jogo
+- **CSS3** - Animações, transições e design responsivo
+- **JavaScript** - Programação orientada a objetos
+- **Font Awesome** - Para ícones de interface
+- **Google Fonts** - Tipografia moderna
 
-🛠️ Tecnologias Utilizadas
+## 🏗️ Estrutura do Projeto
 
-HTML5
+```
+ping-pong-html/
+├── assets/         # Arquivos de mídia
+│   ├── hit.mp3     # Som de colisão com raquete
+│   ├── wall.mp3    # Som de colisão com parede
+│   └── score.mp3   # Som de pontuação
+├── css/
+│   └── style.css   # Estilos da aplicação
+├── js/
+│   └── game.js     # Lógica do jogo
+├── index.html      # Estrutura da página
+├── LICENSE         # Licença MIT
+└── README.md       # Documentação
+```
 
-CSS3
+## 📦 Como Executar o Projeto
 
-JavaScript
+1. Clone o repositório:
+   ```
+   git clone https://github.com/marcopezzote/ping-pong-html.git
+   ```
 
-🔊 Sons
+2. Navegue até a pasta do projeto:
+   ```
+   cd ping-pong-html
+   ```
 
-Os efeitos sonoros são utilizados para:
+3. Abra o arquivo `index.html` no navegador.
 
-Colisão da bola com a raquete (hit.mp3)
+## 🎯 Práticas de Desenvolvimento Implementadas
 
-Colisão da bola com a parede (wall.mp3)
+- **Separação de Responsabilidades**: Código HTML, CSS e JavaScript em arquivos separados
+- **Programação Orientada a Objetos**: Encapsulamento da lógica do jogo em classes
+- **Design Responsivo**: Adaptação para diferentes tamanhos de tela
+- **Acessibilidade**: Controles alternativos e instruções claras
+- **Animações e Transições**: Para uma experiência de usuário fluida
+- **Código Limpo e Comentado**: Facilitando manutenção e compreensão
 
-Marcação de ponto (score.mp3)
+## 🔮 Melhorias Futuras
 
-📂 Importante: Adicione os arquivos de áudio (hit.mp3, wall.mp3, score.mp3) na mesma pasta do arquivo index.html.
+- [ ] Modo multiplayer local (dois jogadores)
+- [ ] Modo online com WebSockets
+- [ ] Personalização de cores e temas
+- [ ] Efeitos de partículas e visuais avançados
+- [ ] Sistema de conquistas e recordes
+- [ ] Compatibilidade com dispositivos móveis (controles touch)
 
-📦 Como Executar o Projeto
-
-Clone o repositório:
-
-git clone https://github.com/marcopezzote/ping-pong-html.git
-
-Navegue até a pasta do projeto:
-
-cd ping-pong-html
-
-Abra o arquivo index.html no navegador.
-
-🎨 Melhorias Futuras
-
-Adição de níveis de dificuldade
-
-Personalização de cores e sons
-
-Modo multiplayer local
-
-🤝 Contribuições
+## 🤝 Contribuições
 
 Contribuições são bem-vindas! Sinta-se livre para abrir issues e pull requests.
 
-📄 Licença
+## 📄 Licença
 
 Este projeto está licenciado sob a licença MIT. Veja o arquivo LICENSE para mais detalhes.
 
-Desenvolvido por Marco Pezzote
+---
 
-🏓 Divirta-se jogando!
+Desenvolvido por Marco Pezzote | 🏓 Divirta-se jogando!
